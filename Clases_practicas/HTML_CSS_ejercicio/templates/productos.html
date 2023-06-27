@@ -1,0 +1,8 @@
+<!doctype html>
+<p>Mostrando todos los productos</p>
+<ul>
+{% for id, producto in productos %}
+    <li>
+        <a href="{{ url_for('get_producto', id=id) }}">{{ producto.name }}</a>
+    </li>
+{% endfor %}

@@ -1,0 +1,102 @@
+#EJERCICIO1
+def siguiente(numero):
+    return numero + 1 
+print(siguiente(3))
+
+def anterior(a):
+    resultado_2 = a-1
+    return resultado_2
+print(anterior(4))
+
+#EJERCICIO2
+def doble(a):
+    resultado_3 = a*2
+    return resultado_3 
+print(doble(4))
+
+#EJERCICIO3
+def doble2(num):
+    return str(doble(anterior(num))) + " " + str(doble(siguiente(num))) #porque tiene que ir el str
+print (doble2(2))
+
+#EJERCICIO4
+def retirar_dinero(saldo,monto):
+    return max (saldo-monto, 0)   
+print (retirar_dinero(200,100))
+
+#EJERCICIO5
+def dia_de_la_semana_favorito(dia):
+    return dia == "Sabado"
+
+print (dia_de_la_semana_favorito("Sabado"))
+print (dia_de_la_semana_favorito("Lunes"))
+
+#EJERCICIO11
+def empezar_con_h(string):
+    return len(string) if string [0] == "H" else False 
+print(empezar_con_h("Hola"))
+print(empezar_con_h("Chau"))
+
+#EJERCICIO12
+def empieza_con_buenos(palabra):
+    return palabra.startswith ("Buenos") or palabra.startswith("Buenas")
+print (empieza_con_buenos("Buenos dias"))
+
+#EJERCICIO6
+def long_onda_radio(numero):
+    return numero > 223.0 and numero < 568.8
+print (long_onda_radio(230.0))
+
+#EJERCICIO7
+def long_onda_radio(numero):
+    return numero > 223.0 and numero < 568.8 and numero != 314.5
+print (long_onda_radio(230.0))
+print (long_onda_radio(314.5))
+
+#EJERCICIO8
+def tiene_descuento(edad):
+    return edad<= 12 or edad >= 60
+print (tiene_descuento(11))
+print (tiene_descuento(50))
+
+#EJERCICIO9
+def xor(booleano1,booleano2):
+    return booleano1 != booleano2 
+print(xor(True,False))
+
+#EJERCICIO10
+def saludo_bienvenida(nombre,apellido):
+    return "Hola " + nombre + " " + apellido
+print(saludo_bienvenida("Jose","Perez"))
+
+#EJERCICIO13
+def es_multiplo(n1,n2):
+    return n2%n1 == 0
+print(es_multiplo(4,12))
+print(es_multiplo(4,5))
+
+#EJERCICIO14
+def par_impar_0(numero):
+    if numero == 0:
+        return "Cero"
+    elif numero % 2 == 0:
+        return "Par" 
+    else:
+         return "Impar"
+print(par_impar_0(5))
+print(par_impar_0(10))
+print(par_impar_0(0))
+
+#EJERCICIO15
+def cuantas_a(frase):
+    contar = 0
+    for letra in frase:
+        if letra == "a":
+         contar = contar + 1
+    return contar
+print(cuantas_a("casa"))
+
+#EJERCICIO16
+def cant_dinero(dinero):
+    return (dinero/ 60000)
+print(cant_dinero(350000))

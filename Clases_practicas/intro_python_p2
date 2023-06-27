@@ -1,0 +1,108 @@
+#!/usr/bin/env python3
+import os, glob, sys
+lista = ["df", "control", "dff"]
+
+#EJERCICIO1
+def control_de_lista(lista):
+    if "control" in lista:
+        lista.remove("control")
+        lista.append("revisado")
+    return lista
+
+print(control_de_lista(lista))
+
+#EJERCICIO2
+def eliminar_primer_elemento_lista(lista):
+     if len(lista) != 0:
+         lista.pop(0)
+     print(lista)
+
+eliminar_primer_elemento_lista(["df", "fv", 'dff'])
+
+#EJERCICIO3
+def lista_y_elemento(lista,elemento):
+    return lista.index(elemento)
+   
+print(lista_y_elemento(["df", "fv", 'dff',"elemento"], "elemento"))
+
+ #EJERCICIO 4
+def eliminar_de_la_lista(lista1,lista2,elemento):
+     lista1.remove(elemento)
+     lista2.append(elemento)
+     return lista1,lista2
+lista1=["hola" , "chau"]
+lista2=["como" , "estas"]
+elemento = "hola"
+
+print(eliminar_de_la_lista(lista1,lista2,elemento))
+
+def eliminar_de_la_lista_1(lista1,lista2,elemento):
+     lista1.pop(0)
+     lista2.insert(3,"hola")
+     return lista1, lista2
+
+lista1=["hola" , "chau"]
+lista2=["como" , "estas"]
+elemento = "hola"
+
+print(eliminar_de_la_lista_1(lista1,lista2,elemento))
+
+#EJERCICIO 5
+listanumeros = [2,4,7]
+def lista_enteros(listanumeros):
+     for numero in listanumeros:
+          if numero  %2 ==0: 
+               index = listanumeros.index(numero)
+               listanumeros[index] = True
+          else:
+               index = listanumeros.index(numero)
+               listanumeros[index] = False
+         # listanumeros[listanumeros.index(numero)] = (numero % 2 == 0)
+     return listanumeros
+         
+print(lista_enteros(listanumeros))
+
+
+#EJERCICIO 6: 
+string = ("Hola, como estas")
+def leer(string):
+     dict_result = dict = {}
+     for letra in string:
+          if letra.isalpha():
+               if letra not in dict_result.keys(): 
+                    dict_result.update({letra: 1}) 
+               else:
+                    value = dict_result.get(letra)
+                    dict_result.update({letra : value + 1})
+     print(dict_result)
+     return dict_result
+leer(string)
+
+#EJERCICIO 7:
+string = ("Hola, como estas")
+def leer(string):
+     dict_result = dict = {}
+     for letra in string:
+          if letra.isalpha():
+               if letra not in dict_result.keys(): 
+                    dict_result.update({letra: 1}) 
+               else:
+                    value = dict_result.get(letra)
+                    dict_result.update({letra : value + 1})
+          else:
+               dict_result.update({letra: 0})  
+     print(dict_result)
+     return dict_result
+leer(string)
+
+#EJERCICIO 8:
+palabra = ["tasat"]
+def es_palindromo(palabra):
+    if palabra == palabra [::-1]:
+     print("Es palindroma")
+    else: 
+       print ("no es palindroma")
+
+es_palindromo(palabra)
+
+#EJERCICIO 9:

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 1</title>
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="container">
+
+
+        <div class="cuadrante1">
+
+            <div class="item item1--texto">
+                <p>ELEGÍ<br>Y<br>LLEVALO</p>
+            </div>
+
+            <figure class="imagen imagen--1">
+                <img src="../static/images/grid.png" alt="grilla" class="imagen__img">
+            </figure>
+
+        </div>
+        
+        <div class="item item2--texto">
+            <p>CONSEJOS ÚTILES</p>
+        </div>
+
+        <div class="cuadrante3">
+
+            <figure class="imagen imagen--3a">
+                <a href="{{ url_for('get_all_products') }}"><img src="../static/images/buscar.png" alt="buscar" class="imagen__buscar"></a>
+            </figure>
+
+            <figure class="imagen imagen--3b">
+                <img src="../static/images/redes.png" alt="redes" class="imagen__redes">
+            </figure>
+
+        </div>
+
+        <div class="cuadrante4">
+            <figure class="imagen imagen--4">
+                <img src="../static/images/play.svg" alt="play" class="imagen__play">
+            </figure>
+
+            <figure class="imagen imagen--2">
+                <img src="../static/images/grid.png" alt="grilla" class="imagen__img">
+            </figure>
+
+        </div>
+    
+    </section>
+    
+</body>
+</html>

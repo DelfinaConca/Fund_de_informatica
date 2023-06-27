@@ -1,0 +1,23 @@
+*{ 
+    margin:0;
+    padding:0;
+}
+
+h1{
+    color:#ff3d3d;
+}
+
+
+.about p {
+    color:blue;
+    
+}
+
+.welcome p:hover{
+    color:blueviolet(99,99,240);
+}
+
+.welcome img {
+        width: 500;
+        height:500;
+}

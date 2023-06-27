@@ -1,0 +1,39 @@
+*{ 
+    margin:0;
+    padding:0;
+}
+
+h1{
+    background-color:#9365d4;
+    padding-left:20px;
+    font-size: 90px;
+    
+}
+
+
+.yellow-section{
+    background-color: #dcd046;
+}
+
+
+.yellow-section p {
+    margin-left:70px;
+    padding: 100px 0px 0px 0px;
+    font-size: 35px;
+}
+
+.yellow-section img {
+    margin-left: 690px;;
+    padding: 0px 690px 100px 0px;
+}
+
+
+.green-section{
+    background-color: #78d6aa;
+    padding: 20px 0px 10px 0px; 
+    margin:0;
+}
+
+.green-section p{
+    font-size: 28px;
+}

@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+import os
+import glob
+import sys
+
+def ejercicio_rutas():
+    os.chdir("informes")
+    txt = glob.glob("*.txt")      #variable
+    cantidad_estado = []          #variable
+    cantidad_lineas = []          #variable
+    for archivo in txt: 
+        with open(archivo, "r") as file:                 #r para que lea
+            file_completa = file.read()
+            file_completa.count("estado")
+            cantidad_estado.append(file_completa.count("estado"))     #la cant de veces que dice estado agregarla a la variable cantidad_estado
+            cantidad_lineas.append(file_completa.count("\n"))         #lo mismo que la anterior pero con \n
+    os.mkdir("Apellido")
+    with open("Apellido/Lista.txt", "w") as salida:               #crear un archivo en modo escritura (esmpieza desde 0) "a" (agregar a lo que ya estaba escrito)
+                                                                  #apellido/Lista.txt porque nos pide que el archivo nuevo este dentro de "Apellido"
+        for archivo in txt:
+            with open("archivo","r") as file:
+                perimera_linea = file.readline()       #readline lee de a una linea cada vez que se ejecuta entonces como aca lo ejecuto una vez, me lee solo la primera
+                salida.write(file.readline())     
+    return cantidad_estado,cantidad_lineas
+c1,c2 = ejercicio_rutas()

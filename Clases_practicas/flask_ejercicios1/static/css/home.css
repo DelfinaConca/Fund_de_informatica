@@ -1,0 +1,27 @@
+*{ 
+    margin:0;
+    padding:0;
+}
+
+.green-section{
+    background-color:#aef496;
+    padding-left:90px;
+    font-size: 40px;
+    font-family: Arcade gamer;
+}
+
+.green-section p {
+    font-size: 40px;
+    font-family: Arcade gamer;
+    padding-left: 90px;
+}
+
+.violet-section{
+    background-color: #bdb2ff;
+    padding: 20px 0px 10px 0px; 
+    margin:0;
+}
+
+.green-section p{
+    font-size: 28px;
+}
